@@ -1,20 +1,21 @@
 <?php
 
 $siswa=[
-    "Hanifah" => 85,
-    "Hasna" => 70,
-    "Rahayu" => 90,
-    "Zahra" => 75,
-    "Mikaila" => 80,
-    "Sita" => 65
+    "Hanifah"   => 85,
+    "Hasna"     => 70,
+    "Rahayu"    => 90,
+    "Zahra"     => 73,
+    "Mikaila"   => 80,
+    "Sita"      => 65,
+    "Ana"       => 75
 ];
 
 foreach ($siswa as $a => $b){  
-    if ($b > 75) {
-        $keterangan = "Lulus";
+    if ($b >= 75) {
+        $ket = "Lulus";
     }else if ($b <= 75){
-         $keterangan = "Tidak Lulus";
+         $ket = "Tidak Lulus";
     }
-    echo "Nama : $a, Nilai : $b, Keterangan : $keterangan <br>";
+    echo "Nama : $a, Nilai : $b, Keterangan : $ket" . "<br>";
 }
     
